@@ -6,6 +6,8 @@ namespace SharpBasicTraining._0_FirstSteps
     {
         public static void BasicCSharpRun()
         {
+            Console.WriteLine("####Basic of C#. Hello world and variables#####");
+
             //Variable declaration
             string message;
 

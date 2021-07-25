@@ -1,0 +1,22 @@
+﻿Please read:
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
+
+Difference between reference and value types
+http://net-informations.com/faq/general/valuetype-referencetype.htm
+https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type
+
+The most important value types are:
+
+bool
+char
+decimal
+double
+float
+int(int32)
+short(int16)
+long(int64)
+
+Reference types:
+
+
+
