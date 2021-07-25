@@ -107,7 +107,8 @@ namespace SharpBasicTraining
                         Console.WriteLine("-----C# basic training-----\n");
                         Console.WriteLine("The following value types available:\n" +
                                           "\n1 - Single arrays" +
-                                          "\n2 - Complex Arrays.\n");
+                                          "\n2 - Complex Arrays.\n" +
+                                          "\n3 - Lucky numbers problem solving.\n");
                         Console.WriteLine("Please select array type:");
                         var answer4 = Console.ReadLine();
                         bool isInt4 = int.TryParse(answer4, out var arrayType);
@@ -121,6 +122,9 @@ namespace SharpBasicTraining
                                 break;
                             case 2:
                                 MultiDimensionalArrays.Run();
+                                break;
+                            case 3:
+                                ArraysHomeTaskPractice.LuckyNumberProblemSolving();
                                 break;
                             default:
                                 Console.WriteLine(NoSuchCaseMessage);
