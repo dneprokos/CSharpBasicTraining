@@ -4,6 +4,7 @@
     {
         public static void LuckyNumberProblemSolving()
         {
+            //Home task:
             //Ask to type a 6 digits number
 
             //Read a number from console

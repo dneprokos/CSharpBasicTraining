@@ -136,9 +136,10 @@ namespace SharpBasicTraining
                         Console.WriteLine("-----C# basic training-----\n");
                         Console.WriteLine("The following Loops are available:\n" +
                                           "\n1 - For" +
-                                          "\n2 - ForEach\n" +
-                                          "\n2 - While\n" +
-                                          "\n2 - DoWhile\n");
+                                          "\n2 - ForEach" +
+                                          "\n3 - While" +
+                                          "\n4 - DoWhile" +
+                                          "\n5 - DoWhile home task");
                         Console.WriteLine("Please select array type:");
                         var answer5 = Console.ReadLine();
                         bool isInt5 = int.TryParse(answer5, out var loopType);
@@ -159,6 +160,9 @@ namespace SharpBasicTraining
                                     break;
                                 case 4:
                                     DoWhilePractice.RunDoWhileLoop();
+                                    break;
+                                case 5:
+                                    DoWhilePractice.RunDoWhileHomeTask();
                                     break;
                                 default:
                                     Console.WriteLine(NoSuchCaseMessage);

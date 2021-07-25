@@ -17,11 +17,12 @@
                 new Movie("Room", 2015, new []{"Canada, Ireland, United Kingdom, USA"}),
                 new Movie("Winter on Fire", 2015, new []{"Ukraine, United Kingdom, USA"}),
                 new Movie("Nayakan", 1987, new []{"India"}),
-                new Movie("Munich", 2005, new []{"USA, Canada"})
+                new Movie("Munich", 2005, new []{"USA, Canada"}),
+                new Movie("The King", 2019, new []{"USA, United Kingdom, Australia, "}),
             };
 
 
-            //Print movies from Australia (Template: Movie name - Release year) 
+            //Print movies from Australia (Template: Movie name - Release year - Country1, Country2, Country...n) 
 
         }
     }
