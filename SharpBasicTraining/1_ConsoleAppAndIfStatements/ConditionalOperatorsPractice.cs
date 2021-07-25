@@ -2,7 +2,7 @@
 
 namespace SharpBasicTraining._1_ConsoleAppAndIfStatements
 {
-    public class IfElseSwitchPracticeClass
+    public class ConditionalOperatorsPractice
     {
         private const string Question = "Hello! What is you name?";
         private const string Question2 = "How old are you?";
@@ -34,8 +34,7 @@ namespace SharpBasicTraining._1_ConsoleAppAndIfStatements
                     break;
             }
 
-
-            //if (age > 0 && age < 99)
+                //if (age > 0 && age < 99)
             //{
             //    if (age < 7)
             //    {
