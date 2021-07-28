@@ -12,6 +12,15 @@ namespace SharpBasicTraining._4_Loops
             //    Console.WriteLine("Infinite loop");
             //}
 
+            bool isTrue = true;
+
+            while (isTrue)
+            {
+                Console.WriteLine("Will be print only during first iteration");
+                isTrue = false;
+            }
+
+
             //Will print Happy birthday each year before 10 years.
             var years = 1;
             while (years < 10)
@@ -29,10 +38,20 @@ namespace SharpBasicTraining._4_Loops
 
         public static void RunDoWhileLoop()
         {
-            
+            var years = 1;
+
+            do
+            {
+                Console.WriteLine("You'll see this message once because we use Do While");
+            } while (years < 1);
+
+
+            do
+            {
+                Console.WriteLine("Do while practice");
+                years++;
+            } while (years < 3);
         }
-
-
 
 
 
