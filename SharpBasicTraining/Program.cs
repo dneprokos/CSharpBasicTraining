@@ -4,6 +4,8 @@ using SharpBasicTraining._1_ConsoleAppAndIfStatements;
 using SharpBasicTraining._2_DataTypes._2_ValueTypes;
 using SharpBasicTraining._3_Arrays;
 using SharpBasicTraining._4_Loops;
+using SharpBasicTraining._5_DataStructures;
+using SharpBasicTraining._6_CommonHomeTasks;
 
 namespace SharpBasicTraining
 {
@@ -22,7 +24,9 @@ namespace SharpBasicTraining
                               "\n1 - Conditional operators." +
                               "\n2 - Data Types." +
                               "\n3 - Arrays." +
-                              "\n4 - Loops");
+                              "\n4 - Loops" +
+                              "\n5 - DataStructures" +
+                              "\n6 - Common Home Tasks\n");
 
             Console.WriteLine("Please select a lesson you want to run:");
             var answer = Console.ReadLine();
@@ -49,7 +53,9 @@ namespace SharpBasicTraining
                     case 2:
                         Console.Clear();
                         Console.WriteLine("-----C# basic training-----\n");
-                        Console.WriteLine("The following data types available:\n\n1 - Reference types\n2 - Value Types.\n");
+                        Console.WriteLine("The following data types available:\n" +
+                                          "\n1 - Reference types" +
+                                          "\n2 - Value Types.\n");
 
                         Console.WriteLine("Please select C# DataType:");
                         var answer2 = Console.ReadLine();
@@ -67,7 +73,11 @@ namespace SharpBasicTraining
                                 case 2:
                                     Console.Clear();
                                     Console.WriteLine("-----C# basic training-----\n");
-                                    Console.WriteLine("The following value types available:\n\n1 - Boolean practice\n2 - Char practice.\n3 - Decimal practice.\n4 - Integer practice.\n");
+                                    Console.WriteLine("The following value types available:\n" +
+                                                      "\n1 - Boolean practice" +
+                                                      "\n2 - Char practice." +
+                                                      "\n3 - Decimal practice." +
+                                                      "\n4 - Integer practice.\n");
                                     Console.WriteLine("Please select value type you want to run");
                                     var answer3 = Console.ReadLine();
                                     bool isInt3 = int.TryParse(answer3, out var valueTypeNumber);
@@ -107,7 +117,7 @@ namespace SharpBasicTraining
                         Console.WriteLine("-----C# basic training-----\n");
                         Console.WriteLine("The following value types available:\n" +
                                           "\n1 - Single arrays" +
-                                          "\n2 - Complex Arrays.\n" +
+                                          "\n2 - Complex Arrays." +
                                           "\n3 - Lucky numbers problem solving.\n");
                         Console.WriteLine("Please select array type:");
                         var answer4 = Console.ReadLine();
@@ -139,7 +149,8 @@ namespace SharpBasicTraining
                                           "\n2 - ForEach" +
                                           "\n3 - While" +
                                           "\n4 - DoWhile" +
-                                          "\n5 - DoWhile home task");
+                                          "\n5 - ForEach home task - Movies from Australia" +
+                                          "\n6 - DoWhile home task - Print while integer");
                         Console.WriteLine("Please select array type:");
                         var answer5 = Console.ReadLine();
                         bool isInt5 = int.TryParse(answer5, out var loopType);
@@ -162,13 +173,62 @@ namespace SharpBasicTraining
                                     DoWhilePractice.RunDoWhileLoop();
                                     break;
                                 case 5:
-                                    DoWhilePractice.RunDoWhileHomeTask();
+                                    ForEachLoopPractice.RunGetMoviesFromAustralia();
+                                    break;
+                                case 6:
+                                    DoWhilePractice.PrintWhileIntegerHomeTask();
                                     break;
                                 default:
                                     Console.WriteLine(NoSuchCaseMessage);
                                     break;
                             }
                         }
+                        break;
+                    case 5:
+                        Console.Clear();
+                        Console.WriteLine("-----C# basic training-----\n");
+                        Console.WriteLine("The following DataStructures are available:\n" +
+                                          "\n1 - Lists\n");
+                        Console.WriteLine("Please select array type:");
+                        var answer6 = Console.ReadLine();
+                        bool isInt6 = int.TryParse(answer6, out var dataStructureType);
+                        if (!isInt6)
+                            Console.WriteLine(NotIntegerMessage);
+                        else
+                        {
+                            switch (dataStructureType)
+                            {
+                                case 1:
+                                    ListDataStructureExample.ListRunExample();
+                                    break;
+                                default:
+                                    Console.WriteLine(NoSuchCaseMessage);
+                                    break;
+                            }
+                        }
+                        break;
+                    case 6:
+                        Console.Clear();
+                        Console.WriteLine("-----C# basic training-----\n");
+                        Console.WriteLine("The following Common HomeTasks are available:\n" +
+                                          "\n1 - SimpleConsoleCalculator\n");
+                        Console.WriteLine("Please select home task:");
+                        var answer7 = Console.ReadLine();
+                        bool isInt7 = int.TryParse(answer7, out var homeTaskNumber);
+                        if (!isInt7)
+                            Console.WriteLine(NotIntegerMessage);
+                        else
+                        {
+                            switch (homeTaskNumber)
+                            {
+                                case 1:
+                                    SimpleConsoleCalculator.RunCalculatorApp();
+                                    break;
+                                default:
+                                    Console.WriteLine(NoSuchCaseMessage);
+                                    break;
+                            }
+                        } 
                         break;
                     default:
                         Console.WriteLine(NoSuchCaseMessage);
