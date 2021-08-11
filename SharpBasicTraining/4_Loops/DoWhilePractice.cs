@@ -55,8 +55,25 @@ namespace SharpBasicTraining._4_Loops
 
 
 
-        public static void RunDoWhileHomeTask()
+        public static void PrintWhileIntegerHomeTask()
         {
+            bool isInteger;
+
+            Console.Clear();
+            Console.WriteLine("Prints while integer: \n");
+
+            do
+            {
+                string input = Console.ReadLine();
+                isInteger = int.TryParse(input, out var result);
+
+                if (isInteger)
+                    Console.WriteLine($"You've entered a new text of integer type {result}");
+            } 
+            while (isInteger);
+
+            Console.WriteLine("It was not an integer");
+
             //Home task:
             //Read text from console while it's integer
             //Each time you need to print this text.
