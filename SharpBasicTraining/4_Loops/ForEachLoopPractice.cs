@@ -7,16 +7,7 @@ namespace SharpBasicTraining._4_Loops
     {
         public static void RunForEachLoop()
         {
-            string[] movieNames = {"Mad Max", "The Rising Hawk", "Crocodile Dundee", "Winter on Fire", "The King"};
 
-            Console.WriteLine("Movies contain 'The' article");
-            foreach (var movieName in movieNames)
-            {
-                if (movieName.Contains("The"))
-                {
-                    Console.WriteLine(movieName);
-                }
-            }
         }
 
         public static void RunGetMoviesFromAustralia()
@@ -46,7 +37,7 @@ namespace SharpBasicTraining._4_Loops
                 }
             }
 
-            //Print movies from Australia (Template: Movie name - Release year - Country1, Country2, Country...n) 
+            //Print movies from Australia (Template: Movie name - Release year - Country1, Country2, Country...n)
 
         }
     }
