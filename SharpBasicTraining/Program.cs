@@ -1,6 +1,7 @@
 ﻿using System;
 using SharpBasicTraining._0_FirstSteps;
 using SharpBasicTraining._1_ConsoleAppAndIfStatements;
+using SharpBasicTraining._2_DataTypes._1_ReferenceTypes;
 using SharpBasicTraining._2_DataTypes._2_ValueTypes;
 using SharpBasicTraining._3_Arrays;
 using SharpBasicTraining._4_Loops;
@@ -68,7 +69,7 @@ namespace SharpBasicTraining
                             switch (dataTypeNumber)
                             {
                                 case 1:
-                                    Console.WriteLine("No methods available at this moment");
+                                    StringTestClass.RunExample();
                                     break;
                                 case 2:
                                     Console.Clear();
@@ -188,7 +189,8 @@ namespace SharpBasicTraining
                         Console.Clear();
                         Console.WriteLine("-----C# basic training-----\n");
                         Console.WriteLine("The following DataStructures are available:\n" +
-                                          "\n1 - Lists\n");
+                                          "\n1 - Lists" +
+                                          "\n2 - Dictionary\n");
                         Console.WriteLine("Please select array type:");
                         var answer6 = Console.ReadLine();
                         bool isInt6 = int.TryParse(answer6, out var dataStructureType);
@@ -200,6 +202,9 @@ namespace SharpBasicTraining
                             {
                                 case 1:
                                     ListDataStructureExample.ListRunExample();
+                                    break;
+                                case 2:
+                                    DictionaryDataStructurePractice.RunDictionary();
                                     break;
                                 default:
                                     Console.WriteLine(NoSuchCaseMessage);
