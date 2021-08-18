@@ -65,7 +65,6 @@ namespace SharpBasicTraining._2_DataTypes._1_ReferenceTypes
             var expelliarmusAsCharArray = expelliarmus.ToCharArray();
 
 
-
             //TODO:Home Task Print explanation foreach of the examples
         }
     }
